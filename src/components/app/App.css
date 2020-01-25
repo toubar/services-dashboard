@@ -1,0 +1,63 @@
+body {
+    background: floralwhite;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.75em 0;
+}
+
+h3 {
+    font-size: 1.2em;
+    font-weight: 100;
+    font-family: monospace;
+}
+
+.Services-container {
+    font-family: Helvetica Narrow, sans-serif;
+    display: grid;
+    max-width: 80%;
+    margin: 30px auto auto;
+    grid-gap: 5em;
+    grid-template: repeat(1, 0fr) / repeat(4, 1fr); /* shorthand for grid-template rows / columns */
+}
+
+@media (max-width: 1450px) {
+    .Services-container {
+        grid-template: repeat(1, 0fr) / repeat(2, 1fr);
+    }
+}
+
+.Service {
+    text-align: center;
+    background: rgba(201, 201, 201, 0.53);
+    border-radius: 11px;
+    padding: 2em 3em;
+}
+
+.running {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: forestgreen;
+}
+
+.error {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: red;
+}
+
+.server {
+    margin: 5px;
+    padding: 5px;
+    align-items: center;
+    display: inline-grid;
+    grid-template-columns: 20px 1fr;
+}
+
+.ServerList {
+    text-align: left;
+    display: inline-grid;
+}
