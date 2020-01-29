@@ -16,13 +16,23 @@ h3 {
 .Services-container {
     font-family: Helvetica Narrow, sans-serif;
     display: grid;
-    max-width: 80%;
+    max-width: 85%;
     margin: 30px auto auto;
-    grid-gap: 5em;
+    grid-gap: 2%;
     grid-template: repeat(1, 0fr) / repeat(4, 1fr); /* shorthand for grid-template rows / columns */
 }
 
 @media (max-width: 1450px) {
+    .Services-container {
+        grid-template: repeat(1, 0fr) / repeat(3, 1fr);
+    }
+
+    .Service {
+        max-width: 60%;
+    }
+}
+
+@media (max-width: 1100px) {
     .Services-container {
         grid-template: repeat(1, 0fr) / repeat(2, 1fr);
     }
@@ -33,6 +43,8 @@ h3 {
     background: rgba(201, 201, 201, 0.53);
     border-radius: 11px;
     padding: 2em 3em;
+    margin: 1em 1em;
+
 }
 
 .running {
