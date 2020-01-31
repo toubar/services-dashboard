@@ -11,7 +11,7 @@ const App = () => {
     // useEffect Hook - analogous to Life Cycle Methods for class based components i.e. componentWillMount()
     useEffect(() => {
         const fetchData = async () => {
-            const res = await fetch('http://127.0.0.1:5000/services/');
+            const res = await fetch('http://127.0.0.1:5000/services');
             if (res.status === 200) {
                 res.json().then((res) => {
                     setServices(res['services']);
